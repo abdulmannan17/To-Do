@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Todo App</title>
+<script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-database.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-
+awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="bootstrap-4.4.1-dist/bootstrap-4.4.1-
+dist/css/bootstrap.min.css">
+
+<script>
+// Your web app's Firebase configuration
+var firebaseConfig = {
+apiKey: "AIzaSyBN1s--UqZ2DhNRy43z8KwldweLHe9ISCM",
+authDomain: "todosaylani-56c55.firebaseapp.com",
+databaseURL: "https://todosaylani-56c55.firebaseio.com",
+projectId: "todosaylani-56c55",
+storageBucket: "todosaylani-56c55.appspot.com",
+messagingSenderId: "899161166029",
+appId: "1:899161166029:web:2688ac202c9c8133ae5984",
+measurementId: "G-VY143H45C6"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+</script>
+
+</head>
+
+<body>
+<h1>To Do list</h1>
+<div class="main">
+<input type="text" id="todo-item" placeholder="Title" />
+<abbr title="Add An Item">
+<button type="button" onclick="addItem()" class="butn"><i class="fa fa-plus" aria-
+hidden="true"></i></button></abbr>
+</div>
+</div>
+<div class="center" >
+<ol id="list">
+</ol>
+<div id="deleteall">
+<abbr title="Delete All Item" >
+<button type="button" onclick="delAll()" class="deleteall">Delete All</button>
+</abbr>
+</div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
